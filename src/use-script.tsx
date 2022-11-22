@@ -114,6 +114,7 @@ export default function useScript({
         document.body.appendChild(scriptEl);
 
         return () => {
+            if(status) status.loading = false;
             scriptEl.removeEventListener('load', handleLoad);
             scriptEl.removeEventListener('error', handleError);
         };

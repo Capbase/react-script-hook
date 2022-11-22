@@ -13,10 +13,9 @@
         "type": "git",
         "url": "https://github.com/hupe1980/react-script-hook"
     },
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts",
+    "main": "src/index.tsx",
     "files": [
-        "lib"
+        "src"
     ],
     "scripts": {
         "build": "rimraf lib && tsc",
